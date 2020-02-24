@@ -1,0 +1,15 @@
+{
+  "id": "pake uuid",
+  "name": "agung",
+  "phone": "081289794823795827",
+  "email": "agung@test.com",
+  "status": [
+    "pending",
+    "in-progress",
+    "failed",
+    "completed"
+  ],
+  "dukcapilId": "pake uuid",
+  "createdAt": "2000-01-01",
+  "updatedAt": "2000-01-01"
+}

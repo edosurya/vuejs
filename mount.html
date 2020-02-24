@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Belajar Vue</title>
+		<script src="vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<h1>{{ message }}</h1>
+		</div>
+		<script type="text/javascript">
+			var vm = new Vue({
+				el: '#app',
+				data: {
+				message: 'Hello world!',
+			},
+			beforeUpdate() {
+				console.log('before update: '+
+				'el = ' + this.$el.textContent)
+			},
+			updated() {
+				console.log('update: '+
+				'el = ' + this.$el.textContent)
+				},
+			})
+
+			vm.$watch('message', function (newValue, oldValue) {
+				console.log('Var message diubah dari '+oldValue+' menjadi '+newValue)
+			})
+
+			vm.message = 'Selamat Datang!'
+		</script>
+	</body>
+</html>

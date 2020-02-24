@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Belajar Vue</title>
+		<script src="vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<h1>{{ name }} umur {{ age }} {{ gender }}</h1>
+			<p> {{ hobby }} </p>
+			<p> {{ children }} </p>
+		</div>
+		<script type="text/javascript">
+			var vm = new Vue({
+			el: '#app',
+			data: {
+				name: 'Hafid', // string
+				age: 33, // integer
+				gender: true, // boolean (Pria)
+				hobby: ['coding','sleeping'], // array
+				children: {
+						1: 'Ammar',
+						2: 'Faqih',
+						3: 'Syamil'
+						} // object
+				}
+			})
+		</script>
+	</body>
+</html>

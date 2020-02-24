@@ -1,0 +1,13 @@
+{
+  "id": "pake uuid",
+  "customerId": "pake uuid",
+  "step": [
+    "create",
+    "sms",
+    "upload",
+    "privy",
+    "otp",
+    "finish"
+  ],
+  "createdAt": "2000-01-01"
+}
